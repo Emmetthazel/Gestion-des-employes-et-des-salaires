@@ -10472,3 +10472,51 @@ Caused by: java.sql.SQLException: Operation not allowed after ResultSet closed
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 
+May 31, 2025 3:32:10 PM com.employeemanagement.utils.AppLogger log
+CONFIG: Look and feel système configuré
+May 31, 2025 3:32:10 PM com.employeemanagement.utils.AppLogger log
+INFO: Environnement initialisé - Java 23.0.2 (Oracle Corporation) | Mémoire max: 1986 MB
+May 31, 2025 3:32:26 PM com.employeemanagement.utils.AppLogger log
+WARNING: Could not load application icon: Cannot invoke "java.net.URL.toExternalForm()" because "location" is null
+May 31, 2025 3:32:27 PM com.employeemanagement.utils.AppLogger log
+INFO: Application lancée pour abdo (Rôle: EMPLOYEE)
+May 31, 2025 3:32:27 PM com.employeemanagement.utils.AppLogger log
+SEVERE: Error loading pointages
+java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "com.mysql.cj.NativeSession.getPropertySet()" because "this.session" is null
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at java.desktop/javax.swing.SwingWorker.get(SwingWorker.java:612)
+	at com.employeemanagement.views.MainWindow$9.done(MainWindow.java:762)
+	at java.desktop/javax.swing.SwingWorker$4.run(SwingWorker.java:749)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(SwingWorker.java:847)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(AccumulativeRunnable.java:112)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(SwingWorker.java:857)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.mysql.cj.NativeSession.getPropertySet()" because "this.session" is null
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getDate(ResultSetImpl.java:785)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getDate(ResultSetImpl.java:798)
+	at com.employeemanagement.dao.PointageDAO.mapToPointage(PointageDAO.java:206)
+	at com.employeemanagement.dao.PointageDAO.findByEmployeeId(PointageDAO.java:164)
+	at com.employeemanagement.views.MainWindow$9.doInBackground(MainWindow.java:750)
+	at com.employeemanagement.views.MainWindow$9.doInBackground(MainWindow.java:744)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:305)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:342)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
