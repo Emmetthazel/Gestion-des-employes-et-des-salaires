@@ -15,7 +15,6 @@ A comprehensive system for managing employee information and salary calculations
 ## Technical Stack / Stack Technique
 - Backend: Java
 - Database: MySQL
-- Frontend: (To be determined)
 - Build Tool: Maven
 
 ## Prerequisites / Prérequis
@@ -77,7 +76,7 @@ Un système complet pour gérer les informations des employés et les calculs de
 ## Stack Technique
 - Backend: Java
 - Base de données: MySQL
-- Frontend: (À déterminer)
+- Frontend: React.js avec Material-UI
 - Outil de build: Maven
 
 ## Prérequis
